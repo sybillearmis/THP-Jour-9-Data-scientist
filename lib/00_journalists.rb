@@ -27,7 +27,7 @@ def exo
     puts "Il y en a #{journalists.grep(/_/).count}."
 
     puts "On va trier la liste de handle par ordre alphabétique"
-    print journalists.sort do |handle_a, handle_b| #on peut simplement les trier et ne pas les afficher en retirant le print
+    print journalists.sort do |handle_a, handle_b| #on peut simplement les trier et ne pas les afficher en retirant le print #apparemment tableau.sort suffit 
         handle_a <=> handle_b
     end
 
